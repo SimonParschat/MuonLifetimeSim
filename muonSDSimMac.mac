@@ -1,0 +1,20 @@
+# Macro file for muonSDSim
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute muonSDSimMac.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfWorkers 4
+#
+# Initialize kernel
+/run/initialize
+#
+/control/verbose 1
+/run/verbose 1
+/event/verbose 0
+/tracking/verbose 0
+#
+/gun/particle mu-
+/gun/energy 50 MeV
+#
+/run/beamOn 100000
